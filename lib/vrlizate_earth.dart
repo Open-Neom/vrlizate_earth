@@ -1,5 +1,10 @@
-/// Earth georeferencing. Rendering and simulation remain local and bounded.
-library;
-
-export 'src/earth_local_frame.dart';
-export 'src/wgs84.dart';
+export 'domain/models/earth_centered_position.dart';
+export 'domain/models/earth_compass_alignment.dart';
+export 'domain/models/earth_poi_node.dart';
+export 'domain/models/wgs84_coordinate.dart';
+export 'domain/services/earth_geodesic_calculator.dart';
+export 'domain/services/earth_local_frame.dart';
+export 'domain/services/earth_poi_registry.dart';
+export 'domain/services/wgs84.dart';
+export 'utils/constants/vr_earth_constants.dart';
+export 'utils/vr_earth_validator.dart';

@@ -1,13 +1,13 @@
 name: vrlizate_earth
-description: WGS84 georeferencing and bounded local Earth frames for the VRlizate SDK.
-version: 0.1.0
-publish_to: none
+description: WGS84 georeferencing, geodesic navigation, compass alignment, and bounded local Earth frames for the VRlizate SDK.
+version: 1.0.0
+repository: https://github.com/Open-Neom/vrlizate_earth
 environment:
   sdk: ^3.10.8
 dependencies:
-  vrlizate_world: ^0.1.0
+  vrlizate_world: ^1.0.0
 dev_dependencies:
-  vrlizate_physics: ^0.1.0
+  vrlizate_physics: ^1.0.0
   vector_math: ^2.2.0
   lints: ^5.1.1
   test: ^1.25.15

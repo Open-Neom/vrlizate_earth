@@ -1,7 +1,14 @@
-## 0.1.0
+# Changelog
 
-- Add WGS84 ellipsoidal and Earth-centered coordinates with finite/domain checks.
-- Add bounded east/up/north local frames, coordinate conversion, rebase signaling,
-  same-instance position rebasing and `VrWorldEntity` placement.
-- Document ellipsoid/geoid height differences, floating-origin requirements and
-  the boundary between georeferencing and future planetary content/rendering.
+## 1.0.0
+
+- Architecture refactor to Open Neom standard layout (`lib/utils/constants/`, `lib/domain/models/`, `lib/domain/services/`) with one class per file and centralized constants (`VrEarthConstants`).
+- Add `EarthGeodesicCalculator` with Haversine surface distance, initial forward bearing, and spherical destination coordinate calculation.
+- Add `EarthCompassAlignment` for converting between magnetic/true compass headings and VRlizate right-handed local ENU yaw.
+- Add `EarthPoiNode` and `EarthPoiRegistry` for registering georeferenced Points of Interest, querying by surface distance, and projecting into an `EarthLocalFrame`.
+- Add `EarthLocalFrame.containsCoordinate` for non-throwing coordinate bounds checks.
+- Preserve 100% backward-compatible barrel exports under `lib/src/` and `lib/vrlizate_earth.dart`.
+
+## 0.1.0 — Unreleased
+
+- WGS84 coordinates, ECEF conversions, local tangent frames, and entity placement.
