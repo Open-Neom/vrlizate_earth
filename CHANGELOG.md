@@ -9,6 +9,6 @@
 - Add `EarthLocalFrame.containsCoordinate` for non-throwing coordinate bounds checks.
 - Preserve 100% backward-compatible barrel exports under `lib/src/` and `lib/vrlizate_earth.dart`.
 
-## 0.1.0 — Unreleased
+## 0.1.0 - local preview
 
 - WGS84 coordinates, ECEF conversions, local tangent frames, and entity placement.
